@@ -9,11 +9,6 @@
 }
 
 header {
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(img/bg.jpg); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: #000; */
     height: 98vh;
     margin: 0 auto;
 }
@@ -105,13 +100,14 @@ header {
 .overlay-txt {
     width: 90%;
     margin: 0 auto;
-    margin-top: 90px;
+    margin-top: 98px;
 }
 
 .overlay-txt p {
     color: #fff;
     width: 50%;
     margin: 0 auto;
+    letter-spacing: 1px;
 }
 
 .overlay-txt p:nth-child(1) {
@@ -122,21 +118,16 @@ header {
 }
 
 .overlay-txt p:nth-child(2) {
-    font-size: 5.5em;
+    font-size: 4.60em;
     font-weight: 600;
-    line-height: 95px;
-    max-width: 60%;
+    line-height: 75px;
+    width:56%;
     margin: 0 auto;
 }
 
-.bg-text p {
-    letter-spacing: 2px;
-    /* text-shadow: 1px 2px #000; */
-}
-
 .btn-bg {
-    margin-top: 50px;
-    padding: 15px 35px;
+    margin-top: 40px;
+    padding: 15px 30px;
     background: #047756;
     color: #fff;
     border-radius: 10px;
@@ -149,7 +140,6 @@ header {
 .btn-bg:hover {
     background: transparent;
     letter-spacing: 1px;
-    /* transform: translateY(100px); */
     transition: all 0.2s ease-in-out 0.1s;
     border: 2px solid #047756 !important;;
 }
@@ -206,7 +196,6 @@ header {
 }
 
 .services {
-    /* border: 2px solid red; */
     width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -245,7 +234,6 @@ header {
 }
 
 .desc{
-    /* border: 2px solid red; */
     width: 50%;
 }
 
@@ -253,7 +241,6 @@ header {
     font-size: 1.7em;
     color: #047756;
     font-weight: 400;
-    /* border: 2px solid red; */
     margin: 10px 0;
 }
 
@@ -295,7 +282,6 @@ header {
 .btn:hover {
     background: transparent;
     letter-spacing: 1px;
-    /* transform: translateY(100px); */
     transition: all 0.2s ease-in-out 0.1s;
     border: 2px solid #047756 !important;
     color: #047756;
@@ -304,20 +290,16 @@ header {
 
 footer {
     background: #011c14;
-    /* height: 300px; */
     margin-top: 20px;
     color: #fff;
 }
 
 .foot-cont{
-    /* border: 2px solid red; */
     width: 90%;
     margin: 0 auto;
-    /* text-align: center; */
 }
 
 .foot-cont1{
-    /* border: 2px solid red; */
     width: 90%;
     margin: 50px auto;  
     padding: 40px 30px 0 30px;
@@ -415,13 +397,6 @@ hr{
 }
 
 @media screen and (max-width: 500px)  {
-    .header{
-        height: 90vh;
-        width: 100%;
-        margin: 0 auto;
-        padding-top: 20px;
-    }
-
     .hamburger {
         display: block;
         padding-right: 20px;
@@ -433,6 +408,7 @@ hr{
         width: 100%;
         margin: 0 auto;
         align-items: center;
+        position: relative;
     }
 
     .logo{
@@ -448,7 +424,7 @@ hr{
         display: flex;
         flex-direction: column;
         height: 100vh;
-        background-color: #fff;
+        background-color: #000;
         padding-top: 90px;
         transition: .5s;
     }
@@ -459,6 +435,7 @@ hr{
 
     .nav-links li a {
         font-size: 20px;
+        color: #fff;
     }
 
     .nav-links li a:hover {
@@ -486,27 +463,52 @@ hr{
     }
 
     header {
-        height: 80vh;
         width: 100%;
     }
 
-    .bg-text {
-        max-width: 100%;
+    .container{
+        border: 2px solid ;
+        height: 80vh;
+        background: #000;
+        z-index: -1;
     }
 
-    .bg-text p:nth-child(1){
-        font-size: 1.8em;
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
     }
 
-    .bg-text p:nth-child(2){
-        font-size: 3.2em;
+    .swiper {
+        height: 80vh;
+    }
+
+    .swiper-slide img {
+        height: 80vh;
+    }
+
+    .overlay {
+        height: 80vh;
+    }
+
+    .overlay-txt {
+        width: 100%;
+        margin-top: 140px;
+    }
+
+    .overlay-txt p:nth-child(1){
+        font-size: 1.4em;
+        width: 85%;
+    }
+
+    .overlay-txt p:nth-child(2){
+        font-size: 2.5em;
         max-width: 90%;
         margin-top: 20px;
-        line-height: 60px;
+        line-height: 50px;
+        width: 95%;
     }
 
     .btn-bg {
-        margin: 10px 0;
+        margin: 30px 0;
         padding: 12px 25px;
         font-size: 1em;
     }
@@ -523,6 +525,10 @@ hr{
     .text {
         width: 90%;
         margin: 10px auto;
+    }
+
+    .text p:nth-child(1){
+        width: 90%;
     }
 
     .text p {
