@@ -492,16 +492,17 @@ hr{
 
     .overlay-txt {
         width: 100%;
-        margin-top: 140px;
+        border: 2px solid red;
+        margin: 150px auto;
     }
 
     .overlay-txt p:nth-child(1){
-        font-size: 1.4em;
+        font-size: 1.2em;
         width: 85%;
     }
 
     .overlay-txt p:nth-child(2){
-        font-size: 2.5em;
+        font-size: 2.2em;
         max-width: 90%;
         margin-top: 20px;
         line-height: 50px;
@@ -520,7 +521,8 @@ hr{
 
     .about h1 {
         padding: 0;
-        font-size: 2.2em;
+        font-size: 2em;
+        border: 2px solid red;
     }
 
     .text {
@@ -534,7 +536,8 @@ hr{
 
     .text p {
         width: 90%;
-        font-size: 1.3em;
+        border: 2px solid red;
+        font-size: 1.1em;
     }
 
     .text button {
@@ -551,7 +554,7 @@ hr{
     }
 
     .services h1 {
-        font-size: 2.2em;
+        font-size: 2em;
     }
 
     .cards {
@@ -569,7 +572,7 @@ hr{
     }
 
     .desc p {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .foot-cont1{
